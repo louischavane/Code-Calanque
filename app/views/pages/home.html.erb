@@ -72,29 +72,44 @@
 
 <!-- Le staff -->
 
-<div class="section">
+<div class="section" id="Profs">
+<div class="container">
 <h2>Les Profs</h2>
-
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+Prof #1
+</div>
+<div class="col-xs-12 col-sm-4">
+Prof #2
+</div>
+<div class="col-xs-12 col-sm-4">
+Prof #3
+</div>
+</div>
+</div>
 </div>
 
 <!-- Le Inscription -->
+
+
 
 <div class="padded" id='inscription'>
   <div class="container">
     <div class="row">
     <div class="text-center">
-      <h2>Inscription</h2>
+      <h2>Pré-Inscription</h2>
       <p>Seulement <strong> 12 places</strong> sont disponibles pour cette semaine inoubliable.</p>
       <p>Laisse nous ton email pour être le premier à t'inscrire</p>
+        <%= form_tag contacts_path, id:"subscribe-form", method: "post", remote: true, class: "form-inline"  do %>
+        <div class="form-error">
 
-      <%= simple_form_for @contact, html: {class: 'form-inline'} do |f|%>
-        <%= f.input :email, label: false, input_html: { class: 'input-lg' }, placeholder: 'mark@facebook.com'  %>
-        <%= f.button :submit, class: "btn btn-primary btn-lg", value: "Je m'inscris" %>
+        </div>
+        <div class="form-group">
+            <%= text_field_tag :email, nil, placeholder: "mark@facebook.com", class: "input-lg form-control" %>
+        </div>
+        <%= submit_tag "Ca m'intéresse", class: "btn btn-primary btn-lg" %>
       <% end %>
 
-
-
-<!--End mc_embed_signup-->
     </div>
 
     </div>
