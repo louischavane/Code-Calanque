@@ -2,7 +2,6 @@ language: ruby
 services:
 addons:
   postgresql: '9.4'
-app/controllers/contacts_controller.rb
 before_script:
   - psql -c 'create database codecalanque_test;' -U postgres
 script:
