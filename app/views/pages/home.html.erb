@@ -10,17 +10,17 @@
 
 <!-- Le concept -->
 
-<div class="section">
-<h1 class="text-center">Le Concept</h1>
+<div class="section" id="concept">
 <div class="container">
   <div class="row">
+  <h1>Le Concept</h1>
     <div class="col-xs-12 col-sm-6">
       <p>
-        Apprenez à coder votre produit en seulement une semaine, dans le cadre unique du parc national des calanques.
-        Le jour nous codons, en fin de journée nous escaladons.
-        Tout est compris le logement, les repas, les cours, le matériel.
-        Prenez juste votre ordi et vos billets de train.
+        Apprenez à coder votre produit en seulement <strong>une semaine</strong>, dans le cadre unique du <strong>parc national des calanques</strong>.
       </p>
+        <p>Le jour nous <strong>codons</strong>, en fin de journée nous <strong>escaladons</strong></p>
+        <p> <strong>Tout est compris</strong> le logement, les repas, les cours, le matériel.
+        Prenez juste votre ordi et vos billets de train, nous nous occupons du reste</p>
     </div>
   </div>
 </div>
@@ -28,45 +28,75 @@
 </div>
 
 <!-- Le code -->
-<div class="section">
+<div class="section" id="code">
 
-  <h2>Le Code</h2>
+  <div class="container">
+    <div class="row">
+      <h2>Apprenez à Coder</h2>
 
-  <p>L'objectif de cette semaine est d'apprendre à coder un <strong>produit de A à Z </strong>.</p>
-  <p></p>
-  <p>Il n'y a pas de niveau requis minimum, mais pour ceux qui n'ont jamais codé nous vous enverrons des petits devoirs de vacances pour préparer la semaine ;)</p>
+      <div class="col-xs-12 col-sm-6">
+         <p>L'objectif de cette semaine est d'apprendre à coder un <strong>produit de A à Z </strong>.</p>
+        <p>Que vous soyiez complétement débutant ou avec une petite expérience nous verrons les outils, les langages et le workflow des <strong>startups techniques</strong> </p>
+        <p>De la définition des <em> users stories </em> à leurs mises en production, le code n'aura <strong>plus de secret</strong> pour vous.</p>
+        <p>Il n'y a pas de niveau requis minimum, mais des bases en HTML/CSS sont les bienveues. Si ce n'est pas le cas nous vous enverrons des <strong>devoirs de vacances</strong> pour préparer la semaine ;)</p>
 
-  <%= link_to "Le programme", program_path %>
+        <%= link_to "Le programme", program_path, class: "btn btn-primary"%>
+      </div>
+
+    </div>
+  </div>
+
+
 
 </div>
 
 
 <!-- Les calanques -->
 
-<div class="section">
-<h2>Les Calanques</h2>
+<div class="section" id="calanques">
+  <div class="container">
+    <h2>Les Calanques</h2>
 
-  <p>Découvrez les calanques grâce à l'escalade, <strong>aucun niveau pré-requis </strong> n'est exigé pour participer à cette semaine. </p>
-  <p>Que vous soyez débutants ou expérimentés nous vous fourniront le matériel et des professionnels vous encadreront.</p>
-  <p>Si la hauteur vous fait peur, les calanques nous réservent bein d'autres activités, des balades, du kayacs, des baignades ...</p>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <p>Découvrez les calanques d'une manière unique grâce à l'escalade, <strong>aucun niveau pré-requis </strong> n'est exigé pour participer à cette semaine. </p>
+      <p>Que vous soyez débutants ou expérimentés nous vous fourniront le matériel. L'encadrement sera assuré par des professionnels pour en profiter en <strong>toute sécurité</strong></p>
+      <p>Si la hauteur vous fait peur, les calanques nous réservent plein <strong>d'autres activités</strong>, des balades, du kayacs, des baignades ...</p>
+    </div>
+  </div>
+</div>
+
+
 
 </div>
 
 <!-- Le staff -->
 
 <div class="section">
-<h2>Le staff</h2>
+<h2>Les Profs</h2>
 
-</div>
-
-<!-- Le programme -->
-
-<div class="section">
-<h2>Le Programme</h2>
 </div>
 
 <!-- Le Inscription -->
 
-<div class="section">
-<h2>Le Programme</h2>
+<div class="padded" id='inscription'>
+  <div class="container">
+    <div class="row">
+    <div class="text-center">
+      <h2>Inscription</h2>
+      <p>Seulement <strong> 12 places</strong> sont disponibles pour cette semaine inoubliable.</p>
+      <p>Laisse nous ton email pour être le premier à t'inscrire</p>
+
+      <%= simple_form_for @contact, html: {class: 'form-inline'} do |f|%>
+        <%= f.input :email, label: false, input_html: { class: 'input-lg' }, placeholder: 'mark@facebook.com'  %>
+        <%= f.button :submit, class: "btn btn-primary btn-lg", value: "Je m'inscris" %>
+      <% end %>
+
+
+
+<!--End mc_embed_signup-->
+    </div>
+
+    </div>
+  </div>
 </div>

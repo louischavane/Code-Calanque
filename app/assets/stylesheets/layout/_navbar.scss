@@ -1,7 +1,7 @@
 /* Main class */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: rgba(33,44,55,0.7);
   transition: all 0.3s ease;
   display: flex;
   height: 50px;
@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  line-height: 50px;
 }
 
 /* Navbar item */
@@ -36,17 +37,31 @@
   flex: 0 1 auto;
   cursor: pointer;
   padding: 0 20px;
+  transition: all 0.15s ease;
 }
+.navbar-wagon-item:hover {
+
+  background-color: $blue;
+
+}
+
+
 
 /* Navbar standard link */
 .navbar-wagon-link {
-  color: #616668;
+  color: white;
   font-size: 14px;
+  text-transform: uppercase;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
   text-decoration: none;
+  color: white;
 }
+.navbar-wagon-link:focus {
+  text-decoration: none;
+  color: white;
+}
+
 
 /* Navbar right button */
 .navbar-wagon-button {
@@ -54,10 +69,9 @@
   padding: 0 20px;
   border-radius: 5px;
   line-height: 30px;
-  background-color: #D23333;
+  background-color: $blue;
   color: white;
   font-size: 14px;
-  border: 2px solid #D23333;
 }
 .navbar-wagon-button:hover {
   color: white;
