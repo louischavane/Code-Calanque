@@ -3,7 +3,7 @@
   <div class="banner-content">
     <h1>Code & Calanques</h1>
     <p>Une semaine pour apprendre à coder un produit dans un cadre unique</p>
-    <a class="btn btn-primary btn-lg">Je suis curieux !</a>
+    <a class="btn btn-primary btn-lg">Je m'inscris !</a>
   </div>
 </div>
 
@@ -12,11 +12,11 @@
 
 <div class="section-sm" id="concept">
 <div class="container">
-  <div class="row">
   <h1>Le Concept</h1>
+  <div class="row">
     <div class="col-xs-12 col-sm-6">
       <p>
-        Apprenez à coder votre produit en seulement <strong>une semaine</strong>, dans le cadre unique du <strong>parc national des calanques</strong>.
+        Apprenez à coder votre produit en seulement <strong>une semaine</strong>, dans le cadre unique du <strong>parc national des calanques</strong> à Marseille.
       </p>
         <p>Le jour nous <strong>codons</strong>, en fin de journée nous <strong>escaladons</strong></p>
         <p> <strong>Tout est compris</strong> le logement, les repas, les cours, le matériel.
@@ -31,8 +31,8 @@
 <div class="section txt-white" id="code" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= asset_path "code-stt.jpg" %>');">
 
   <div class="container">
+    <h2>Apprenez à Coder</h2>
     <div class="row">
-      <h2>Apprenez à Coder</h2>
 
       <div class="col-xs-12 col-sm-6">
          <p>L'objectif de cette semaine est d'apprendre à coder un <strong>produit de A à Z </strong>.</p>
@@ -67,6 +67,15 @@
 
 <!-- Le staff -->
 
+<div class="section" id="profs">
+  <div class="container">
+  <h2>Les Profs</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card-prof">
+          Prof #1
+        </div>
+      </div>
 
 <div class="" id="Profs">
   <div class="container">
@@ -89,7 +98,7 @@
     <div class="text-center">
       <h2>Pré-Inscription</h2>
       <p>Seulement <strong> 12 places</strong> sont disponibles pour cette semaine inoubliable.</p>
-      <p>Laisse nous ton email pour être le premier à t'inscrire</p>
+      <p>Laisse-nous ton email pour être le premier à t'inscrire</p>
         <%= form_tag contacts_path, id:"subscribe-form", method: "post", remote: true, class: "form-inline"  do %>
         <div class="form-error">
 
@@ -97,7 +106,7 @@
         <div class="form-group">
             <%= text_field_tag :email, nil, placeholder: "mark@facebook.com", class: "input-lg form-control" %>
         </div>
-        <%= submit_tag "Ca m'intéresse", class: "btn btn-primary btn-lg" %>
+        <%= submit_tag "Ca m'intéresse !", class: "btn btn-primary btn-lg" %>
       <% end %>
 
     </div>
