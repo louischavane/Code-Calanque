@@ -40,7 +40,7 @@
         <p>De la définition des <em> users stories </em> à leurs mises en production, le code n'aura <strong>plus de secret</strong> pour vous.</p>
         <p>Il n'y a pas de niveau minimum requis, mais des bases en HTML/CSS sont les bienvenues. Si ce n'est pas le cas nous vous enverrons des <strong>devoirs de vacances</strong> pour préparer la semaine ;)</p>
 
-        <%= link_to "Découvrir le programme", program_path, class: "btn btn-primary"%>
+        <%= link_to "Découvrir le programme", "#", class: "btn btn-primary"%>
       </div>
 
     </div>
@@ -59,7 +59,7 @@
       <div class="col-xs-12 col-sm-6">
         <p>Découvrez les calanques d'une manière unique grâce à l'escalade, le kayac, des restaurants préservés et des balades. <strong>Aucun niveau pré-requis </strong> n'est exigé pour participer à cette semaine. </p>
         <p>Pour l'escalade, que vous soyez débutants ou expérimentés nous vous fourniront le matériel. L'encadrement sera assuré par des professionnels pour en profiter en <strong>toute sécurité</strong>.</p>
-        <%= link_to "Découvrir les activités", program_path, class: "btn btn-primary"%>
+        <%= link_to "Découvrir les activités", "#", class: "btn btn-primary"%>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
 
 <!-- Le staff -->
 
-<div class="padded" id="Profs">
+<div class="padded" id="profs">
   <div class="container">
     <h2>Les Profs</h2>
     <div class="row">
@@ -87,7 +87,7 @@
     <div class="row">
     <div class="text-center">
       <h2>Tenez-vous au courant !</h2>
-      <p>Le projet vous intéresse et vous voulez être tenu au courant des <strong>prochaines promotions</strong>.</p>
+      <p>Inscrivez-vous à notre newsletter</strong>.</p>
         <%= form_tag contacts_path, id:"subscribe-form", method: "post", remote: true, class: "form-inline"  do %>
         <div class="form-error">
 
