@@ -1,0 +1,20 @@
+louis:
+  last_name: Louis
+  first_name: Chavane
+  description: trop cool
+  image: louis.jpg
+yan:
+  last_name: Yan
+  first_name: Perron
+  description: trop cool
+  image: yan.jpg
+william:
+  last_name: William
+  first_name: Hutter
+  description: trop cool
+  image: william.jpg
+lucas:
+  last_name: Lucas
+  first_name: Babey
+  description: trop cool
+  image: lucas.png

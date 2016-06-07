@@ -40,7 +40,7 @@
         <p>De la définition des <em> users stories </em> à leurs mises en production, le code n'aura <strong>plus de secret</strong> pour vous.</p>
         <p>Il n'y a pas de niveau requis minimum, mais des bases en HTML/CSS sont les bienvenues. Si ce n'est pas le cas nous vous enverrons des <strong>devoirs de vacances</strong> pour préparer la semaine ;)</p>
 
-        <%= link_to "Le programme", program_path, class: "btn btn-primary"%>
+        <%= link_to "Découvrir le programme", program_path, class: "btn btn-primary"%>
       </div>
 
     </div>
@@ -55,44 +55,35 @@
   <div class="container">
     <h2>Les Calanques</h2>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <p>Découvrez les calanques d'une manière unique grâce à l'escalade, <strong>aucun niveau pré-requis </strong> n'est exigé pour participer à cette semaine. </p>
-      <p>Que vous soyez débutants ou expérimentés nous vous fourniront le matériel. L'encadrement sera assuré par des professionnels pour en profiter en <strong>toute sécurité</strong></p>
-      <p>Si la hauteur vous fait peur, les calanques nous réservent plein <strong>d'autres activités</strong>, des balades, du kayacs, des baignades ...</p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <p>Découvrez les calanques d'une manière unique grâce à l'escalade, <strong>aucun niveau pré-requis </strong> n'est exigé pour participer à cette semaine. </p>
+        <p>Que vous soyez débutants ou expérimentés nous vous fourniront le matériel. L'encadrement sera assuré par des professionnels pour en profiter en <strong>toute sécurité</strong></p>
+        <p>Si la hauteur vous fait peur, les calanques nous réservent plein <strong>d'autres activités</strong>, des balades, du kayacs, des baignades ...</p>
+      </div>
     </div>
   </div>
-</div>
-
-
-
 </div>
 
 <!-- Le staff -->
 
 
-<div class="section" id="Profs">
-<div class="container">
-<h2>Les Profs</h2>
-<div class="row">
-<div class="col-xs-12 col-sm-4">
-Prof #1
+<div class="" id="Profs">
+  <div class="container">
+    <h2>Les Profs</h2>
+    <div class="row">
+      <% PROFS.each do |key, data| %>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= render partial: 'card-prof', locals: {data: data} %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-<div class="col-xs-12 col-sm-4">
-Prof #2
-</div>
-<div class="col-xs-12 col-sm-4">
-Prof #3
-</div>
-</div>
-</div>
-</div>
+
 
 <!-- Le Inscription -->
-
-
-
-<div class="padded" id='inscription'>
+<div class="section-sm" id='inscription'>
   <div class="container">
     <div class="row">
     <div class="text-center">

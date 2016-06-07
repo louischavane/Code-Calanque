@@ -1,9 +1,11 @@
 .section{
   height: calc(100vh - 50px);
+  min-height: 500px;
   padding-top: 100px;
 }
 
 .section-sm{
   height: calc(60vh - 50px);
+  min-height: 400px;
   padding-top: 100px;
 }
