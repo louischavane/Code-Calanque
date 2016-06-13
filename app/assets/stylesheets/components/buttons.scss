@@ -1,0 +1,29 @@
+.btn-cc{
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: 0.2s ease;
+  background-color: rgba(255,255,255,0);
+  text-decoration: none;
+
+  &:hover,&:visited{
+    color: white;
+    background-color: rgba(255,255,255,0.1)
+  }
+}
+
+.btn-cc-white{
+  color: white;
+  border: 1px solid white;
+  transition: 0.2s ease;
+}
+
+.btn-cc-blue{
+  color: #4B89CD;
+  border: 1px solid #4B89CD;
+  transition: 0.2s ease;
+  text-decoration: none;
+    &:hover,&:visited{
+    color: #4B89CD;
+    background-color: rgba(75,137,205,0.1)
+  }
+}
