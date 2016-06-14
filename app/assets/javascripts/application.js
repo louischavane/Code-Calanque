@@ -18,3 +18,12 @@ $(function() {
 $( ".apply-head" ).click(function() {
   $("html, body").animate({ scrollTop: $(document).height() }, 600);
 });
+
+
+var currentUrl = window.location.pathname;
+$(document).ready(function() {
+  debugger;
+  if(currentUrl.match(/candidate$/)) {
+    $("html, body").animate({ scrollTop: $(document).height() }, 600);
+  };
+});

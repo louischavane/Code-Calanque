@@ -3,6 +3,7 @@ class CandidatesController < ApplicationController
   before_action :set_session
 
   def new
+    @
   end
 
   def create
@@ -10,7 +11,7 @@ class CandidatesController < ApplicationController
     if @candidate.save
       redirect_to session_path(@session), notice: "Votre candidature à bien été prise en compte"
     else
-      redirect_to new
+      render action: 'new'
       end
   end
 

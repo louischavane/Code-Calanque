@@ -27,15 +27,15 @@
 
   <div class="apply-form-wrapper text-white background-blue" id="apply">
   <div class="apply-title apply-head">
-    Je me lance !
+    Je m'inscris !
   </div>
   <div class="apply-description">
   </div>
 
   <div class="apply-form">
 
-    <%= simple_form_for [@session, @candidate] do |f| %>
-      <%= f.input :first_name, label: "Prenom" %>
+    <%= simple_form_for @candidate, url: candidate_session_path(@session) do |f| %>
+      <%= f.input :first_name, label: "Prénom" %>
       <%= f.input :last_name, label: "Nom" %>
       <%= f.input :email %>
       <p>  Prix: <strong> <%= @session.price %> TTC </strong> </p>

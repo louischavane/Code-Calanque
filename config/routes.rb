@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
 
   resources "sessions", only: [:show] do
-      resources "candidates", only: [:new, :create]
+    member do
+      post 'candidate'
+    end
   end
 
   root to: 'pages#home'
