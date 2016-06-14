@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Code & Calanque</title>
+    <title>Code & Calanques</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,5 +12,7 @@
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
+    <%= render 'shared/footer' %>
+
   </body>
 </html>
