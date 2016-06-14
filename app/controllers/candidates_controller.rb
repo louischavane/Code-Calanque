@@ -3,7 +3,6 @@ class CandidatesController < ApplicationController
   before_action :set_session
 
   def new
-    @
   end
 
   def create
@@ -23,4 +22,5 @@ class CandidatesController < ApplicationController
   def set_session
     @session = Session.find(params[:session_id])
   end
+
 end
