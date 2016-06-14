@@ -5,3 +5,26 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Session.destroy_all
+
+Session.create!(
+  start_date: DateTime.new(2016,8,22),
+  end_date: DateTime.new(2016,8,28),
+  location: 'Luminy, Marseille',
+  description: "En plein coeur des calanques de Luminy, les calanques de morgiou et de sormiou s'offrent à nous",
+  name: 'Luminy, Aout 2016',
+  image: 'sessions/luminy.jpg',
+  price: 980
+  )
+
+Session.create!(
+  start_date: DateTime.new(2016,11,20),
+  end_date: DateTime.new(2016,11,27),
+  location: 'Callelongue, 13008 Marseille',
+  description: "Callelongue est une calanque magique tout au bout de la route du bord de mer de Marseille",
+  image: "sessions/callelongue.jpg",
+  name: 'Callelongue, Nov 2016',
+  price: 980
+  )
+

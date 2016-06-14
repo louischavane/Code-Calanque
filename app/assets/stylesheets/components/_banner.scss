@@ -19,3 +19,22 @@
   color: $gray-lighter;
   margin-bottom: 20px;
 }
+
+.wagon-banner{
+  display: flex;
+  flex-align: center;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 100px;
+  }
+  p{
+    font-size: 60px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+
+}

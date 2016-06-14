@@ -13,3 +13,8 @@ $(function() {
            $(".form-error").text()
         });
 })
+
+
+$( ".apply-head" ).click(function() {
+  $("html, body").animate({ scrollTop: $(document).height() }, 600);
+});

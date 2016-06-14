@@ -1,0 +1,48 @@
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(244,245,247,0.07) 0%, rgba(5,9,12,0.4) 50%), url('<%= asset_path @session.image %>');">
+  <div class="banner-content">
+
+    <h1> <%= @session.name %> </h1>
+    <p>Du <%= l(@session.start_date, format: :short)%> au <%= l(@session.end_date, format: :long)%> </p>
+  </div>
+</div>
+
+
+
+
+<div class="apply-wrapper">
+
+  <div class="left-wrapper">
+
+    <h2> Ce séjour comprend </h2>
+    <ul class="list-unstyled">
+      <li>
+      <i class="fa fa-check-square-o" aria-hidden="true"></i> Le transport sur place</li>
+      <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Les repas</li>
+      <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Les activités</li>
+    </ul>
+
+    <p>Prenez juste votre <strong>ordinateur</strong> et votre <strong>maillot de bain</strong></p>
+  </div>
+
+  <div class="apply-form-wrapper text-white background-blue" id="apply">
+  <div class="apply-title apply-head">
+    Je me lance !
+  </div>
+  <div class="apply-description">
+  </div>
+
+  <div class="apply-form">
+
+    <%= simple_form_for [@session, @candidate] do |f| %>
+      <%= f.input :first_name, label: "Prenom" %>
+      <%= f.input :last_name, label: "Nom" %>
+      <%= f.input :email %>
+      <p>  Prix: <strong> <%= @session.price %> TTC </strong> </p>
+      <%= f.button :submit, value:"Je postule", class:"btn btn-cc btn-cc-white" %>
+
+    <% end %>
+  </div>
+</div>
+
+</div>

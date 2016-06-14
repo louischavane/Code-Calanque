@@ -1,0 +1,34 @@
+fr:
+  concept:
+    title: Le concept
+    description: |
+      Vous souhaitez intégrer une start-up ou lancer votre propre startup ?
+      Vous voulez devenir <strong>Product Manager</strong> ou un <strong>CEO averti</strong> ?
+      Mais malheureusement vous ne savez pas coder ?
+      Cette semaine est alors faite pour vous.
+
+      Apprenez à coder en seulement <strong>une semaine</strong>, dans le cadre unique des <strong>calanques marseillaises</strong>.
+      Le jour nous <strong>codons</strong>, en fin de journée nous <strong>découvrons</strong> dans les calanques.
+      <strong>Tout est compris</strong> : la formation, le logement, les repas, le matériel pour les activités. Prenez juste votre ordi et vos billets de train, nous nous occupons du reste.
+  code:
+    title: Apprenez à coder
+    description: |
+      L'objectif de la semaine est d'apprendre à coder un <strong>produit de A à Z</strong> avec des professeurs ayant l'expérience de travailler dans des start-ups.
+
+      De la définition des <i>users stories</i> à leurs mises en production, le code n'aura plus de secret pour vous.
+
+      Que vous soyez complètement débutant ou que vous ayez une petite expérience, nous vous apprendrons les outils, les langages et le workflow des <strong>startups techniques.</strong>
+
+      Il n'y a pas de niveau minimum requis, mais des bases en HTML/CSS sont les bienvenues. Si ce n'est pas le cas nous vous enverrons des <strong>devoirs de vacances</strong> pour préparer la semaine ;)
+    cta: Découvrir le programme
+  calanque:
+    title: Les Calanques
+    description: |
+      Entrez dans l’univers <strong>magique</strong> des calanques avec des balades, du kayak dans l’eau préservée des criques, de l'escalade pour les plus téméraires et des restaurants perdus dans les collines.
+
+      Pour les activités, quel que soit votre niveau, nous vous fournirons le matériel. L'encadrement sera assuré par des profesionnels pour en profiter en <strong>toute sécurité</strong>
+    cta: Découvrir le programme
+  session:
+    title: Les prochaines sessions
+    description: |
+      En général seulement une dizaine de places sont disponibles pour chaque session, nous attribuons les places dans l'ordre des inscriptions.
