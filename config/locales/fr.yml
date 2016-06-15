@@ -32,5 +32,50 @@ fr:
     title: Les prochaines sessions
     description: |
       En général seulement une douzaine de places sont disponibles pour chaque session, nous attribuons les places dans l'ordre des inscriptions.
-
-
+  program:
+    lundi:
+      9h-12h: Accueil de tout le monde
+      12h-13h20: Déjeuner d'Accueil
+      13h30-16h30: Introduction à la semaine, Cours session \#1
+      16h30-17h: Pause
+      17h-19h30: Cours Session \#2
+      20h30-...: Soirée
+    mardi:
+      9h-12h: Cours session \#3
+      12h-13h20: Déjeuner
+      13h30-16h30: Cours Session \#4
+      16h30-17h: Pause
+      17h-19h30: Plage
+      20h30-...: Soiré code
+    mercredi:
+      9h-12h: Activité sportive, Kayak ou escalde au choix
+      12h-13h20: Pic-nic dans les calanques
+      13h30-16h30: Cours session \#5
+      16h30-17h: Pause
+      17h-19h30: Cours session \#6
+      20h30-...:
+    jeudi:
+      9h-12h: Cours session 7
+      12h-13h20: Déjeuner
+      13h30-16h30: Cours session \#8
+      16h30-17h: Balade dans les calanques
+      17h-19h30: Diner dans les calanques
+      20h30-...:
+    vendredi:
+      9h-12h: Activité sportive au choix, Kayak ou escalade
+      12h-13h20: Déjeuner dans les calanques
+      13h30-16h30: Cours session \#9
+      16h30-17h: Pause
+      17h-19h30: Cours session \#10
+      20h30-...: Hackaton soirée, préparation des pitchs
+    samedi:
+      9h-12h: Cours session \#11
+      12h-13h20: Déjeuner
+      13h30-16h30: Cours session \#12
+      16h30-17h: Pause
+      17h-19h30: Quartier libre
+      20h30-...: Soirée au restaurant + soirée à Marseille
+    dimanche:
+      9h-12h: Bilan de la semaine
+      12h-13h20: Déjeuner final
+      13h30-16h30: Départ des participants
