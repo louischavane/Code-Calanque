@@ -1,10 +1,18 @@
 <div class="padded container">
   <h1>Le programme de la semaine</h1>
 
-  <div class="padded">
+  <div class="padded-sm">
+    <h2>Objectif de la semaine</h2>
+
+    <p>Le programme de Code & Calanques est intensif, il s'agit en une semaine d'apprendre un développer un produit de A à Z.</p>
+    <p>Pendant une semaine nous coderons un clone de Product Hunt, vous pourrez enfin donner vie à vos idées.</p>
+  </div>
+
+
+  <div class="padded-sm">
     <h2>Description d'une journée type</h2>
 
-    <p>Le programme de Code & Calanques est intensif, il s'agit en une semaine d'apprendre un développer un produit de A à Z. </p>
+
     <p>Une journée type se déroule de la façon suivante: </p>
     <div class="typical-day-detail">
       <p><b>9h-12h:</b> Cours du Matin </p>
@@ -17,20 +25,12 @@
     </div>
   </div>
 
-  <div class="padded">
-  <h2>Programme détaillé </h2>
-  <div class="day-detail">
-    <% t('program').each do |day, content| %>
-      <h4><%= day %></h4>
-      <% content.each do |time, description|%>
-        <p><b><%= time %>:</b> <%= raw description %> </p>
-      <% end %>
-    <% end %>
   </div>
 
-
+  <div class="padded-sm background-blue text-center text-white">
+    <p>Pour obtenir le programme détaillé, postulez à une formation.</p>
+    <%= link_to "Je Postule", root_path(anchor: "sessions"), class: "btn btn-cc btn-cc-white" %>
   </div>
-
 
   </div>
 </div>
