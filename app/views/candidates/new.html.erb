@@ -1,2 +1,28 @@
-<h1>Candidates#new</h1>
-<p>Find me in app/views/candidates/new.html.erb</p>
+<div class="container padded">
+
+
+  <h1> Postulez à Code & Calanques </h1>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+
+        <p>Que vous soyez sûr où que vous hésitiez encore, n'hésitez pas à postuler </p>
+
+        <%= simple_form_for(@candidate) do |f| %>
+          <%= f.input :first_name, label: t('first_name') %>
+          <%= f.input :last_name, label: t('last_name') %>
+          <%= f.input :email, label: t('email') %>
+          <%= f.association :session, include_blank: false %>
+          <p><b>Prix : <%= @session.price %>   € TTC </b> </p>
+
+          <%= f.submit 'Je postule', class: "btn btn-cc btn-cc-blue" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
