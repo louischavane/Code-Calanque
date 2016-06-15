@@ -1,0 +1,36 @@
+<div class="padded container">
+  <h1>Le programme de la semaine</h1>
+
+  <div class="padded">
+    <h2>Description d'une journée type</h2>
+
+    <p>Le programme de Code & Calanques est intensif, il s'agit en une semaine d'apprendre un développer un produit de A à Z. </p>
+    <p>Une journée type se déroule de la façon suivante: </p>
+    <div class="typical-day-detail">
+      <p><b>9h-12h:</b> Cours du Matin </p>
+      <p><b>12h-13h30:</b> Déjeuner tous ensemble </p>
+      <p><b>13h30-16h30:</b> Cours de l'après midi</p>
+      <p><b>16h30-17h:</b> Pause </p>
+      <p><b>17h-19h30:</b> Activé dans les calanques </p>
+
+      <p><i>En fonction des saisons et des activités, le cours du matin peut-être inversé avec l'activité du soir</i></p>
+    </div>
+  </div>
+
+  <div class="padded">
+  <h2>Programme détaillé </h2>
+  <div class="day-detail">
+    <% t('program').each do |day, content| %>
+      <h4><%= day %></h4>
+      <% content.each do |time, description|%>
+        <p><b><%= time %>:</b> <%= raw description %> </p>
+      <% end %>
+    <% end %>
+  </div>
+
+
+  </div>
+
+
+  </div>
+</div>
