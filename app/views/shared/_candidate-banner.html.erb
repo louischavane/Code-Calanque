@@ -1,0 +1,11 @@
+  <% if @session %>
+  <% params = {session: @session} %>
+  <% else %>
+  <% params = nil %>
+  <% end%>
+
+  <div class="padded-sm background-blue text-center text-white">
+    <p>Pour obtenir le programme détaillé, postulez à une formation.</p>
+    <%= link_to "Je postule", new_candidate_path(params) , class: "btn btn-cc btn-cc-white" %>
+  </div>
+

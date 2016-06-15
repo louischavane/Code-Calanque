@@ -8,41 +8,29 @@
 </div>
 
 
+<div class="container">
 
+    <div class="padded">
+      <p><%= @session.description %></p>
+     <!--  todo :add a map -->
+     </div>
 
-<div class="apply-wrapper">
-
-  <div class="left-wrapper">
-
-    <h2> Ce séjour comprend </h2>
-    <ul class="list-unstyled">
-      <li>
-      <i class="fa fa-check-square-o" aria-hidden="true"></i> Le transport sur place</li>
-      <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Les repas</li>
-      <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Les activités</li>
-    </ul>
-
-    <p>Prenez juste votre <strong>ordinateur</strong> et votre <strong>maillot de bain</strong></p>
-  </div>
-
-  <div class="apply-form-wrapper text-white background-blue" id="apply">
-  <div class="apply-title apply-head">
-    Je m'inscris !
-  </div>
-  <div class="apply-description">
-  </div>
-
-  <div class="apply-form">
-
-    <%= simple_form_for @candidate, url: candidate_session_path(@session) do |f| %>
-      <%= f.input :first_name, label: "Prénom" %>
-      <%= f.input :last_name, label: "Nom" %>
-      <%= f.input :email %>
-      <p>  Prix: <strong> <%= @session.price %> TTC </strong> </p>
-      <%= f.button :submit, value:"Je postule", class:"btn btn-cc btn-cc-white" %>
-
-    <% end %>
-  </div>
 </div>
+
+  <%= render partial: 'shared/candidate-banner' %>
+
+<div class="container padded-sm">
+
+      <h2> Ce séjour comprend </h2>
+      <ul class="list-unstyled">
+        <li>
+        <i class="fa fa-check-square-o" aria-hidden="true"></i> Le transport sur place</li>
+        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Les repas</li>
+        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Les activités</li>
+      </ul>
+
+      <p>Prenez juste votre <strong>ordinateur</strong> et votre <strong>maillot de bain</strong></p>
+    </div>
+
 
 </div>

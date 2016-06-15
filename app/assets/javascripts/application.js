@@ -22,7 +22,6 @@ $( ".apply-head" ).click(function() {
 
 var currentUrl = window.location.pathname;
 $(document).ready(function() {
-  debugger;
   if(currentUrl.match(/candidate$/)) {
     $("html, body").animate({ scrollTop: $(document).height() }, 600);
   };
