@@ -6,8 +6,4 @@ class PagesController < ApplicationController
   def program
   end
 
-  def inscription
-  end
-
-
 end

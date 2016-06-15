@@ -3,9 +3,9 @@
   <div class="banner-content">
 
 
-    <h1> <%= image_tag "logo_white.png", width: "400px", alt: "Code & Calanque" %> </h1>
+    <h1> <%= image_tag "logo_white.png", alt: "Code & Calanque", id: "logo-banner" %> </h1>
     <p>Une semaine pour apprendre à coder dans un cadre unique</p>
-    <%= link_to "Je postule", root_path(anchor: "sessions"),  class: "btn   btn-cc btn-cc-white btn-lg " %>
+    <%= link_to "Je postule", new_candidate_path,  class: "btn   btn-cc btn-cc-white btn-lg " %>
   </div>
 </div>
 

@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
 
 
-  resources "sessions", only: [:show] do
-    member do
-      post 'candidate'
-    end
-  end
+  resources "sessions", only: [:show]
 
   root to: 'pages#home'
   get 'le-programme', to:'pages#program', as: 'program'
-  get 'inscription', to:'pages#inscription', as: 'inscription'
+  resources "candidates", only: [:new, :create]
 
   resources "contacts", only: [:new, :create]
 
