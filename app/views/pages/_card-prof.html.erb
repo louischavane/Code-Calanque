@@ -2,5 +2,16 @@
   <h2><%= "#{data['first_name'].capitalize} #{data['last_name'].capitalize} "%></h2>
     <%= image_tag data['image'], class:"avatar-xxl avatar-bordered" %>
     <h3><%= data['title'] %></h3>
+        <ul class="list-inline">
+
+
+      <%= link_to "https://www.linkedin.com/in/#{data['linkedin']}", target: "blank" do %>
+        <li>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </li>
+      <% end %>
+
+    </ul>
     <p><%= raw data['description'] %><p>
+
 </div>
