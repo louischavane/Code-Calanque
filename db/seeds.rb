@@ -12,7 +12,7 @@ Session.create!(
   start_date: DateTime.new(2016,8,22),
   end_date: DateTime.new(2016,8,28),
   location: 'Luminy, Marseille',
-  description: "En plein coeur des calanques de Luminy, les calanques de morgiou et de sormiou s'offrent à nous",
+  description: "En plein coeur du parc national des calanques, Sugiton, Morgiou et Sormiou s'offrent à vous",
   name: 'Luminy, Aout 2016',
   image: 'sessions/luminy.jpg',
   price: 980
