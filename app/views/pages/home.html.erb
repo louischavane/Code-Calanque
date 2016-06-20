@@ -3,7 +3,7 @@
   <div class="banner-content">
 
 
-    <h1> <%= image_tag "logo_white.png", alt: "Code & Calanque", id: "logo-banner" %> </h1>
+    <h1> <%= image_tag "logo_white.png", alt: "Code & Calanques", id: "logo-banner" %> </h1>
     <p>Une semaine pour apprendre à coder dans un cadre unique</p>
     <%= link_to "Je postule", new_candidate_path,  class: "btn   btn-cc btn-cc-white btn-lg " %>
   </div>
@@ -13,15 +13,10 @@
 <!-- Le concept -->
 <div class="section-sm" id="concept">
   <div class="container">
-    <h1>Le Concept</h1>
+    <h2><%= t 'calanque.concept' %></h2>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <p>
-          Apprenez à coder en seulement <strong>une semaine</strong>, dans le cadre unique des <strong>calanques</strong> marseillaises.
-        </p>
-        <p>Le jour nous <strong>codons</strong>, en fin de journée nous <strong>découvrons</strong> dans les calanques.</p>
-        <p> <strong>Tout est compris</strong> le logement, les repas, les cours, le matériel.
-        Prenez juste votre ordi et vos billets de train, nous nous occupons du reste.</p>
+        <p><%= simple_format t 'concept.description' %></p>
       </div>
     </div>
   </div>
@@ -32,7 +27,7 @@
 
 
 <!-- Le code -->
-<div class="padded" id="code">
+<div class="padded-sm" id="code">
 
   <div class="container">
     <h2><%= t 'code.title' %></h2>
@@ -109,7 +104,7 @@
                   <h2><%= "#{session.name} - #{session.price} €" %></h2>
                   <p><%= session.description %></p>
               </div>
-              <%=link_to "", session_path(session), class:"card-link" %>
+              <%=link_to "", new_candidate_path({session: session}), class:"card-link" %>
           </div>
         </div>
         <% end %>
