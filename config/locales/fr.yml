@@ -37,6 +37,27 @@ fr:
     description: |
       Seulement une douzaine de places sont disponibles pour chaque session, nous attribuons les places dans l'ordre des inscriptions.
   program:
+    title : Apprenez à coder en Ruby on Rails
+    baseline :  Apprenez à coder un clone de AirBnB en une semaine, en maitrisant des techniques avancées de FrontEnd et de BackEnd.
+    about:
+      title: Ce que vous apprendrez
+      list :
+        - Reprenez les bases du langage ruby et jouez avec des API pour récupérer des données.
+        - Découvrez les notions clefs d’architecture logicielle (MVC) pour comprendre comment Rails est construit.
+        - Apprenez à modéliser votre base de données.
+        - Créez un clone de AirBnB en suivant la méthodologie utilisée dans les startups (schéma de la base de données, maquette, user stories et implémentation).
+        - Comprenez les bases de Rails mais aussi ses bonnes pratiques (pour soigner le frontend, déployer sur Heroku, etc..)
+        - Utilisez de nombreuses librairies ruby et intégrez un login, un upload d’images, etc..
+    targets:
+      title: A qui ce cours est destiné ?
+      list:
+        - Première expérience en HTML/CSS
+        - Entrepreneurs Tech
+        - Product Manager
+        - Développeurs Front-End
+        - Développeurs Rails débutant
+        - Amoureux des calanques
+
     lundi:
       9h-12h: Accueil de tout le monde
       12h-13h20: Déjeuner d'Accueil
