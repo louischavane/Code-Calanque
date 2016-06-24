@@ -2,6 +2,7 @@
 
 
   <h1> Postulez à Code & Calanques </h1>
+ <p>Postulez dès maintenant pour réserver votre place</p>
 
 
   <div class="container">
@@ -18,8 +19,6 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-pull-4 col-sm-8">
-        <p>Postulez dès maintenant pour réserver votre place</p>
-
         <%= simple_form_for(@candidate) do |f| %>
           <%= f.input :first_name, label: t('first_name') %>
           <%= f.input :last_name, label: t('last_name') %>

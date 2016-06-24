@@ -11,7 +11,7 @@
 
 
 <!-- Le concept -->
-<div class="section-sm" id="concept">
+<div class="padded-sm" id="concept">
   <div class="container">
     <h2><%= t 'calanque.concept' %></h2>
     <div class="row">
@@ -36,7 +36,7 @@
       <%= simple_format t 'code.description' %>
       </div>
       <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-        <% link_to t('code.cta'), "#", class: "btn btn-cc btn-cc-blue"%>
+        <%= link_to t('code.cta'), program_path, class: "btn btn-cc btn-cc-blue"%>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
         <p><%= simple_format t 'calanque.description' %></p>
       </div>
       <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-        <% link_to t('calanque.cta'), "#", class: "btn btn-cc btn-cc-blue"%>
+        <%= link_to t('code.cta'), program_path, class: "btn btn-cc btn-cc-blue"%>
       </div>
     </div>
   </div>
