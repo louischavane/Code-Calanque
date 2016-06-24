@@ -6,8 +6,18 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-8">
-
+      <div class="col-xs-12 col-sm-push-8 col-sm-4">
+        <div class="card-message">
+          <h3>Ce séjour comprend:</h3>
+          <ul>
+            <li><p>Le logement</p></li>
+            <li><p>6 jours de cours</p></li>
+            <li><p>30 heures de cours</p></li>
+            <li><p>Les transports sur place</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-pull-4 col-sm-8">
         <p>Postulez dès maintenant pour réserver votre place</p>
 
         <%= simple_form_for(@candidate) do |f| %>
@@ -19,6 +29,12 @@
 
           <%= f.submit 'Je postule', class: "btn btn-cc btn-cc-blue" %>
         <% end %>
+      </div>
+
+      </div>
+
+
+
       </div>
     </div>
   </div>
