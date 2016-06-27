@@ -11,6 +11,7 @@ class Candidate < ApplicationRecord
 
   def send_welcome_email
     CandidateMailer.welcome(self).deliver_now
+    AdminMailer.welcome(self).deliver_now
   end
 
 
