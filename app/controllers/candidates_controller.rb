@@ -11,7 +11,7 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.new(candidate_params)
     if @candidate.save
-      redirect_to root_path, notice: "Votre candidature à bien été prise en compte"
+      redirect_to root_path, notice: "Merci, votre candidature à bien été prise en compte"
     else
       render :new
     end

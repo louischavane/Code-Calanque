@@ -7,10 +7,11 @@ $(function() {
     $('#subscribe-form')
         .bind('ajax:success', function(e, data, status, xhr) {
             $(".form-control").addClass("success");
+            $(".form-message").text("Merci, votre email a bien été pris en compte")
         })
         .bind('ajax:error', function(e, xhr, status, error) {
            $(".form-control").addClass("error");
-           $(".form-error").text()
+           $(".form-message").toggleClass("txt-danger").text(xhr.message)
         });
 })
 
@@ -20,9 +21,4 @@ $( ".apply-head" ).click(function() {
 });
 
 
-var currentUrl = window.location.pathname;
-$(document).ready(function() {
-  if(currentUrl.match(/candidate$/)) {
-    $("html, body").animate({ scrollTop: $(document).height() }, 600);
-  };
-});
+
