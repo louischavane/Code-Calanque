@@ -15,6 +15,7 @@ Session.create!(
   description: "En plein coeur du parc national des calanques, Sugiton, Morgiou et Sormiou s'offrent à vous",
   name: 'Luminy, Aout 2016',
   image: 'sessions/luminy.jpg',
+  size: 12,
   price: 980
   )
 
@@ -25,6 +26,12 @@ Session.create!(
   description: "Callelongue est une calanque magique tout au bout de la route du bord de mer de Marseille",
   image: "sessions/callelongue.jpg",
   name: 'Callelongue, Nov 2016',
+  size: 12
   price: 980
   )
 
+User.destroy_all
+User.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+
+Candidate.destroy_all
+Candidate.create!(first_name:'Alan', last_name:'Boix', email: 'alan.boix@gmail.com', session: Session.first)

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  devise_for :users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources "sessions", only: [:show]
 
   root to: 'pages#home'
