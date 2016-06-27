@@ -19,6 +19,7 @@ gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'autoprefixer-rails'
 gem "rails-i18n"
 gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 group :development, :test do
   gem 'binding_of_caller'
