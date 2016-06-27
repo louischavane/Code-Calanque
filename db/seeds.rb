@@ -28,4 +28,8 @@ Session.create!(
   price: 980
   )
 
+User.destroy_all
 User.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+
+Candidate.destroy_all
+Candidate.create!(first_name:'Alan', last_name:'Boix', email: 'alan.boix@gmail.com', session: Session.first)
