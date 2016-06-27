@@ -8,6 +8,6 @@ class AdminMailer < ApplicationMailer
   def welcome(candidate)
     @candidate = candidate
 
-    mail to: ENV['ADMIN_EMAIL'], subject: "Nouvelle candidature Code & Calanque"
+    mail to: ENV['ADMIN_EMAIL'], subject: "Nouvelle candidature Code & Calanques"
   end
 end
