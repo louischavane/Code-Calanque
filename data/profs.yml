@@ -2,7 +2,7 @@ louis:
   first_name: Louis
   last_name: Chavane
   title: Directeur Le Wagon Aix-Marseille
-  description: Directeur au <a href="http://lewagon.com/aix-marseille" target="_blank">Wagon Aix-Marseille</a>, Louis a plus de 5 ans d'expérience de développement et de product management chez fifty-five à Paris.
+  description: Directeur au <a href="http://lewagon.com/fr/aix-marseille" target="_blank">Wagon Aix-Marseille</a>, Louis a plus de 5 ans d'expérience de développement et de product management chez fifty-five à Paris.
   image: profs/louis.jpg
   linkedin: louischavane
   twitter: '@lchavane'
