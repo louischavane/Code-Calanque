@@ -3,7 +3,7 @@ louis:
   last_name: Chavane
   title: Directeur Le Wagon Aix-Marseille
   description: Directeur au <a href="http://lewagon.com/aix-marseille" target="_blank">Wagon Aix-Marseille</a>, Louis a plus de 5 ans d'expérience de développement et de product management chez fifty-five à Paris.
-  image: louis.jpg
+  image: profs/louis.jpg
   linkedin: louischavane
   twitter: '@lchavane'
 yan:
@@ -11,7 +11,7 @@ yan:
   last_name: Perron
   title: Teacher Assistant Le Wagon Aix-Marseille
   description: Ancien élève du Wagon, Yan est teacher assistant au Wagon Aix-Marseille, il saura vous guider tout au long des journées pour renforcer l'apprentissage du code.
-  image: yan.jpg
+  image: profs/yan.jpg
   linkedin: yanperron
   twitter:
 william:
@@ -19,12 +19,12 @@ william:
   last_name: Hutter
   title: Lead Front-End Developper
   description: Expert du Front-End depuis 6 ans, William a notamment travaillé pour des startups canadiennes. William vous apprendra comment prendre en main Sketch et les meilleures techniques pour un front-end de qualité.
-  image: william.jpg
+  image: profs/william.jpg
   linkedin: williamhutter
 lucas:
   first_name: Lucas
   last_name: Babey
   title: CTO BabaSport
   description: Après plusieurs années de développement chez SAP, Lucas lance sa startup <a href="http://babasport.fr" target="_blank">Babasport</a> il y a 18 mois, basée sur Ruby on Rails, Lucas apportera l'expérience d'un projet déjà bien avancé.
-  image: lucas.png
+  image: profs/lucas.png
   linkedin: lucasbabey
