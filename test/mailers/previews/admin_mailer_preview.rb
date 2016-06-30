@@ -3,7 +3,8 @@ class AdminMailerPreview < ActionMailer::Preview
 
   # Preview this email at http://localhost:3000/rails/mailers/admin_mailer/welcome
   def welcome
-    AdminMailer.welcome
+    candidate = Candidate.first
+    AdminMailer.welcome(candidate)
   end
 
 end
