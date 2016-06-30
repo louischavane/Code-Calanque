@@ -101,7 +101,7 @@
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_url(session.image) %>);">
               <div class="card-category"><%= "Du #{l(session.start_date, format: :short)} au #{l(session.end_date, format: :short)}" %></div>
               <div class="card-description">
-                  <h2><%= "#{session.name} - #{session.price} €" %></h2>
+                  <h3><%= "#{session.name} - #{session.price} €" %></h3>
                   <p><%= session.description %></p>
               </div>
               <%=link_to "", new_candidate_path({session: session}), class:"card-link" %>

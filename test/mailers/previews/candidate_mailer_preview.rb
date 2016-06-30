@@ -5,7 +5,6 @@ class CandidateMailerPreview < ActionMailer::Preview
   def welcome
     candidate = Candidate.first
     CandidateMailer.welcome(candidate)
-    AdminMailer.welcome(candidate)
   end
 
 end
