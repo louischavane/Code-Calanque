@@ -1,0 +1,15 @@
+- name: Visiter le chateau d'if
+  image: IF.png
+- name: Marseille is Goudes
+  image: GOUDES.png
+- name: Coder comme un porc
+  image: PORC.png
+- name: Droit au but
+  image: OM.png
+- name: Algèbre de Boole
+  image: BOULE.png
+- name: J'aime Marseille
+  image: GEM.png
+- name: Un git dans les calanques
+  image: GIT.png
+

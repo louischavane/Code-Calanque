@@ -6,4 +6,7 @@ class PagesController < ApplicationController
   def program
   end
 
+  def code_vs_calanques
+  end
+
 end
