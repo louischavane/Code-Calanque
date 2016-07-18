@@ -1,0 +1,34 @@
+<div class="padded">
+
+  <div class="container">
+
+    <h1>Code vs Calanques : le clash de l'été</h1>
+
+    <p>Si vous aviez le choix entre <strong> apprendre à coder</strong> ou <strong>découvrir les calanques</strong>, que feriez-vous ?</p>
+    <p>Ne répondez pas trop vite, le choix n'est pas si simble, suivez d'abord notre série <em> Code vs Calanques</em> pendant l'été.</p>
+    <p> Et si vous avez toujours du mal à faire votre choix, ne vous en faites pas avec notre formation
+    <%= link_to new_candidate_path do %>
+      <strong>Code & Calanques</strong>
+    <% end %>
+    vous pourrez faire les deux en même temps.</p>
+
+    <div class="illustrations">
+
+
+      <% ILLUSTRATIONS.each_with_index do |picture, index| %>
+      <div class="illustration padded-sm text-center">
+         <h3><%= "#{index+1}" %>)  </h3>
+         <%= image_tag "illustrations/#{picture['image']}", class: 'img-thumbnail', 'data-title': "CODE vs CALANQUES", alt: "#{picture['name']}"%>
+         <p><%= picture['description']%> </p>
+      </div>
+      <% end %>
+    </div>
+
+    <%= render partial: 'shared/share_this' %>
+
+  </div>
+
+
+
+
+</div>
